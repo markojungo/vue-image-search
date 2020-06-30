@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       title: 'Image Search App',
-      searchTerm: 'baby',
+      searchTerm: 'puppies',
       searchPageSize: 10,
       searchPages: 1,
       currentPage: 1,

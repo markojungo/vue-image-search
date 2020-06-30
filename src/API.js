@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+import config from '../config.json';
+
 export default {
   async search(query, page, pageSize) {
     const url = `https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI?autoCorrect=false&pageNumber=${page}&pageSize=${pageSize}&q=${query}&safeSearch=false`;
@@ -6,7 +8,7 @@ export default {
       method: 'GET',
       headers: {
         'x-rapidapi-host': 'contextualwebsearch-websearch-v1.p.rapidapi.com',
-        'x-rapidapi-key': '7c448ee41fmsh90c9c1aaa761b51p198b9cjsn1fa7d98cb565',
+        'x-rapidapi-key': config.API_KEY,
       },
     };
 
